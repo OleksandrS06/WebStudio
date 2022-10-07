@@ -1,0 +1,97 @@
+.hero {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.overlay {
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #c4c4c4;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/hero-bg-phone-min.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-device-pixel-ratio: 2),
+    screen and (min-resolution: 192dpi),
+    screen and (min-resolution: 2dppx) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-bg-phone@2x-min.jpg);
+  }
+
+  @media screen and (min-width: 768px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-bg-tablet-min.jpg);
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero-bg-tablet@2x-min.jpg);
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/hero-bg-desktop-min.jpg);
+    max-width: 1600px;
+    height: 600px;
+
+    @media screen and (min-device-pixel-ratio: 2),
+      screen and (min-resolution: 192dpi),
+      screen and (min-resolution: 2dppx) {
+      background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url(/images/hero-bg-desktop@2x-min.jpg);
+    }
+  }
+}
+
+.hero-headline {
+  max-width: 360px;
+  color: var(--white-color);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 1.6;
+  letter-spacing: 0.06em;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  padding-top: 118px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 696px;
+    font-size: 44px;
+    line-height: 1.37;
+    margin-bottom: 30px;
+    padding-top: 200px;
+  }
+}
+
+.main-button {
+  display: inline-block;
+  min-width: 200px;
+
+  padding: 10px 24px;
+
+  font-family: Roboto, sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.06em;
+  text-align: center;
+  cursor: pointer;
+  background-color: #2196f3;
+  color: var(--white-color);
+  border-radius: 4px;
+  border: none;
+
+  @media screen and (min-width: 1200px) {
+    min-width: 216px;
+    padding: 10px 32px;
+  }
+}

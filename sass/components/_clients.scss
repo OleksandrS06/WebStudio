@@ -1,0 +1,61 @@
+/* секція клієнти */
+.clients {
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    @media screen and (min-width: 1200px){
+    padding-top: 94px;
+    padding-bottom: 92px;
+    }
+}
+.clients__header {
+    font-size: 36px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 50px;
+    
+    @media screen and (min-width: 1200px){
+    font-size: 36px;
+}
+}
+.clients__list {
+    display: flex;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    gap: 30px;
+    
+}
+.clients__item{
+    width: calc(50% - 15px);
+    // margin-bottom: 30px;
+    // &:not(:nth-child(2n)) {
+    // margin-right: 30px;
+    // }
+    @media screen and (min-width: 768px){
+        width: calc((100% - 60px)/3);
+    }
+    @media screen and (min-width: 1200px){
+        width: calc((100% - 150px)/6)
+    }
+}
+
+.clients__link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    fill: #afb1b8;
+    border: #afb1b8 1px solid;
+    transition-property: fill, border;
+    transition-duration: 250ms;
+    transition-timing-function: var(--timing-function);
+
+    &:hover,
+    &:focus {
+            fill: #2196f3;
+            border: #2196f3 1px solid;
+            outline: none;
+        }
+}
